@@ -38,7 +38,7 @@ def ghoul_handler(client, message):
 @client.on_message(filters.command('spam', prefixes=['/', '!', '.']) & filters.me)
 def ghoul_handler(client, message):
     i = 50
-    d = input()
+    d = "Привееет"
     while i > 0:
         try:
             client.send_message(message.chat.id, str(d))
